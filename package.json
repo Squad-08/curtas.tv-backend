@@ -1,0 +1,24 @@
+{
+  "name": "curtas.tv-backend",
+  "version": "0.1.0",
+  "description": "API Rest curtas.tv",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Squad-08/curtas.tv-backend.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Squad-08/curtas.tv-backend/issues"
+  },
+  "homepage": "https://github.com/Squad-08/curtas.tv-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
