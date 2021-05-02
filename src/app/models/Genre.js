@@ -5,7 +5,7 @@ class Genre extends Model {
     static init(sequelize) {
         super.init(
             {
-                id: { primaryKey: true, type: Sequelize.UUID },
+                id: { primaryKey: true, type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4 },
                 name: Sequelize.STRING(50)
             },
             {

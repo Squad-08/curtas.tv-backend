@@ -5,7 +5,7 @@ class Movie extends Model {
     static init(sequelize) {
         super.init(
             {
-                id: { primaryKey: true, type: Sequelize.UUID },
+                id: { primaryKey: true, type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4 },
                 title: Sequelize.STRING(150),
                 sinopse: Sequelize.STRING(500),
                 posterUrl: Sequelize.STRING(100),
