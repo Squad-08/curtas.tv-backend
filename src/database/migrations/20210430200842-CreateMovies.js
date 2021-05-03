@@ -17,11 +17,11 @@ module.exports = {
         allowNull: false
       },
       posterUrl: {
-        type: Sequelize.STRING(100),
+        type: Sequelize.STRING(200),
         allowNUll: false
       },
       videoUrl: {
-        type: Sequelize.STRING(100),
+        type: Sequelize.STRING(200),
         allowNull: false
       },
       popularity: {
@@ -33,6 +33,6 @@ module.exports = {
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('movies')
+    queryInterface.dropTable('movies')
   }
 };
