@@ -1,6 +1,8 @@
 import express from 'express'
 import { createServer } from 'http'
 
+import './database'
+
 const app = express()
 const router = express.Router()
 
