@@ -1,6 +1,7 @@
+import { StatusCode } from 'status-code-enum'
+
 import MoviesRepository from '../repositories/MoviesRepository'
 import { ErrorHandler } from '../helpers/error'
-import { StatusCode } from 'status-code-enum'
 
 class MoviesService {
 
@@ -10,15 +11,22 @@ class MoviesService {
     }
 
     async findAllMaxPopularity(limitOf) {
-        if (!limitOf) {
-            limitOf = this.defaultLimit
-        }
+
+        limitOf = this.validateLimit(limitOf)
 
         return await this.moviesRepository.findAllMaxPopularity(limitOf)
             .catch(() => {
                 return new ErrorHandler(StatusCode.ServerErrorInternal, 'Error when searching for popular movies.')
             })
     }
+
+    validateLimit = (limitOf) => {
+        if (!limitOf || 1 > limitOf) {
+            limitOf = this.defaultLimit
+        }
+
+        return limitOf
+    }
 }
 
-export default new MoviesService()
+export default MoviesService
