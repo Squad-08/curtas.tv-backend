@@ -1,0 +1,92 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Curtas.Tv-API",
+    "description": "API do Curtas.TV"
+  },
+  "host": "localhost:3333",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "movie",
+      "description": "Endpoints movies."
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/destaques": {
+      "get": {
+        "tags": [
+          "movie"
+        ],
+        "description": "Endpoint para obter os curtas em destaque.",
+        "parameters": [
+          {
+            "name": "limitOf",
+            "description": "Limite para quantidade de curtas retornado.",
+            "type": "integer",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/PopularMovies"
+            },
+            "description": "Lista de curtas em destaque encontrados."
+          },
+          "5xx": {
+            "schema": {
+              "$ref": "#/definitions/Error500"
+            },
+            "description": "Erro interno."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "PopularMovies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": "c9a1f40a-65bc-420a-abac-4e140396d526"
+          },
+          "title": {
+            "type": "string",
+            "example": "Movie Title"
+          },
+          "posterUrl": {
+            "type": "string",
+            "example": "https://m.media-amazon.com/images/M/MV.jpg"
+          }
+        }
+      }
+    },
+    "Error500": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "error"
+        },
+        "statusCode": {
+          "type": "number",
+          "example": 500
+        },
+        "message": {
+          "type": "string",
+          "example": "ErrorMessage"
+        }
+      }
+    }
+  }
+}

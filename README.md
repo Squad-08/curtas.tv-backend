@@ -11,6 +11,13 @@ As seguintes ferramentas foram usadas na construção desta API:
 2. Nodemon
 3. Express
 4. Sequelize
+5. Swagger
+
+<hr>
+
+## 📃 Documentação
+A documentação foi feita utilizando o [swagger](https://swagger.io/).
+Com o projeto rodando local, basta acessar: http://localhost:3333/doc
 
 <hr>
 
