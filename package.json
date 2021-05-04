@@ -4,7 +4,7 @@
   "description": "API Rest curtas.tv",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
