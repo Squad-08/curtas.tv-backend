@@ -47,8 +47,11 @@ Para utilizar a API você precisa ter uma instância de um banco de dados, caso 
 #### Configuração da conexão com o banco
 
 Com o banco criado, adicione um arquivo .env na raiz do projeto, seguindo o exemplo abaixo:
-```env
-DATABASE_URL=postgresql://[user[:password]@][netloc][:port][/dbname]
+```env 
+DATABASE_NAME=database-name
+DATABASE_HOST=http://localhost
+DATABASE_USERNAME=username
+DATABASE_PASSWORD=password
 ```
 
 #### Rodando as migrations e as seeders

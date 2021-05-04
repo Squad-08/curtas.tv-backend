@@ -29,6 +29,7 @@ class MoviesRepository {
 
     async findAllMaxPopularity(limit) {
         return await Movie.findAll({
+            attributes: ['id', 'title', 'posterUrl'],
             limit,
             group: 'id',
             order: Sequelize.literal('max(popularity) DESC')
