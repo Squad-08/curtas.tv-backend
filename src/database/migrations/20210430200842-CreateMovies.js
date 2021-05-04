@@ -17,8 +17,12 @@ module.exports = {
         allowNull: false
       },
       posterUrl: {
-        type: Sequelize.STRING(200),
+        type: Sequelize.STRING(300),
         allowNUll: false
+      },
+      thumbnailUrl: {
+        type: Sequelize.STRING(300),
+        allowNull: false
       },
       videoUrl: {
         type: Sequelize.STRING(200),

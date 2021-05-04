@@ -8,6 +8,7 @@ module.exports = {
         title: "Here Is The Plan",
         sinopse: "A dog/cat couple attempt to fulfill their dreams of opening a bakery together, but find their efforts hindered by the problems of the real world.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BZWYwZDA5MTEtNzUyOS11ZTNmLWE3YWItZDIwZWQwYzAwNWRiXkEyXkFqcGdeQXVyNzE2Njc3MzM@._V1_UX182_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMGM5MWE5MWItYTc2MC00ZGI3LWExZWItMjViNjFmM2Q3NWY0XkEyXkFqcGdeQXVyNzE2Njc3MzM@._V1_FMjpg_UX1000_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=5Zqmt1H35fs",
         popularity: 0
       },
@@ -16,6 +17,7 @@ module.exports = {
         title: "Lost & Found",
         sinopse: "A clumsy crochet dinosaur must unravel itself to save the love of its life.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BMjI5NjRmYzMtYTUwNi11Y2JlLTllODktNGIxNTQ5ZGY5YmZjXkEyXkFqcGdeQXVyMTU1NTE4NDg@._V1_UX182_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BMzAxMzVmNWYtNzc4Yi00YWUxLTlkYWUtYWEyYzQ1YWFjYmVjXkEyXkFqcGdeQXVyNTkxMDU1Njg@._V1_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=35i4zTky9pI",
         popularity: 0
       },
@@ -24,6 +26,7 @@ module.exports = {
         title: "Kitbull",
         sinopse: "An unlikely connection sparks between two creatures: a fiercely independent stray kitten and a pit bull. Together, they experience friendship for the first time.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BODA4YmFkMGYtY2MwNC11ZDc1LTgyMjUtZDAzMjdmYTRkNDkyXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_UY268_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BNTQ1NTc3NjctNDA0ZC00NzcyLTljY2YtYjZmYzE3YTY4NTA0XkEyXkFqcGdeQXVyNjgwNDU3NTA@._V1_FMjpg_UX1000_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=AZS5cgybKcI",
         popularity: 0
       },
@@ -32,6 +35,7 @@ module.exports = {
         title: "The OceanMaker",
         sinopse: "After the seas have disappeared, a courageous young female pilot fights against vicious sky pirates for control of the last remaining source of water: the clouds.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BMTJiNDg1ODktMjE1Ni11Yzc3LWE5YTQtZjUzMmVlZWE1YWU3XkEyXkFqcGdeQXVyMzM4NjcxOTc@._V1_UX182_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BODU2YjEyOTktMzgyZC00NzRiLWFmZTMtZGIxM2Q0YzA3NTkwXkEyXkFqcGdeQXVyNzMzMjU5NDY@._V1_FMjpg_UX1000_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=uWCGK4nneeU",
         popularity: 0
       },
@@ -40,6 +44,7 @@ module.exports = {
         title: "Chateau de Sable (Sand Castle)",
         sinopse: "In the middle of a desert, soldiers are protecting a marvelous pearl, but a huge creature is going to steal it.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BNzNiN2YyMTEtZTY5Yi11YjBkLTg5ZjQtYWU1NTI2NzIyMTYyXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_UY268_CR3,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BZjdiYjAwMTAtODg4ZS00NmM1LWJjYjMtODAxODhkZThjYmZkXkEyXkFqcGdeQXVyNTk3NTY4NjI@._V1_FMjpg_UX1000_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=vYRu6MwmFYE",
         popularity: 0
       },
@@ -48,6 +53,7 @@ module.exports = {
         title: "The Pantheon",
         sinopse: "During the age of the Black Magic, stories were told that a space crystal is the key to unlock a portal between two worlds. Whoever acquires the key can unlock the portal at a lost temple called The Pantheon. The story begins with the battle between the Archer and the Orc.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BYTA1NWFjOGQtY2Q4Mi11MGIwLTgyNjMtNGMxNDUzYTdlOTQwXkEyXkFqcGdeQXVyMTE2NzIzNzU1._V1_UY268_CR5,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://www.stashmedia.tv/wp-content/uploads/Screen-Shot-2020-04-07-at-7.27.21-AM-1536x653.png",
         videoUrl: "https://www.youtube.com/watch?v=ZPc2UIgryJU",
         popularity: 0
       },
@@ -56,6 +62,7 @@ module.exports = {
         title: "One Day",
         sinopse: "One man always on the move will have an encounter that puts into question everything he knows",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BYzI3MmVkZDMtNjc1NC11NTcxLTk1M2ItZDM1ODUzM2E1NzJkXkEyXkFqcGdeQXVyMjA1NzcwMjI@._V1_UY268_CR147,1,182,268_AL_.jpg",
+        thumbnailUrl: "http://filmnosis.com/wp-content/uploads/2013/10/oneday_703_vid.jpg",
         videoUrl: "https://www.youtube.com/watch?v=vFART6ZMeEA",
         popularity: 0
       },
@@ -64,6 +71,7 @@ module.exports = {
         title: "Crabe Phare",
         sinopse: "Crabe Phare",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BOWRiMzk5NWEtZTBjYS11ZjhhLTg1ZWYtZTNiY2MxMmUxN2NkXkEyXkFqcGdeQXVyODA1MjQ1MDE@._V1_UX182_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://wiz-art.ua/festival/wp-content/uploads/2016/07/crabe-phare.png",
         videoUrl: "https://www.youtube.com/watch?v=Vo6HXsHgizc",
         popularity: 0
       },
@@ -72,6 +80,7 @@ module.exports = {
         title: "Twin Islands",
         sinopse: "Twin Island East and Twin Island West are two twin islands governed by two kings, where the inhabitants follow the cult of symmetry. Therefore, everything goes two by two. But one day, one event changes everything.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BZjIxNmViZmYtZjFkZC11Y2Y3LWI4MDItNDZhOWNjYjViMThjXkEyXkFqcGdeQXVyNDQ3OTAzOTY@._V1_UY268_CR3,1,182,268_AL_.jpg ",
+        thumbnailUrl: "https://www.stashmedia.tv/wp-content/uploads/2019-04-19_1213-640x360.png",
         videoUrl: "https://www.youtube.com/watch?v=fdr5fthfCOw",
         popularity: 0
       },
@@ -80,6 +89,7 @@ module.exports = {
         title: "Smash & Grab",
         sinopse: "After years of toiling away inside the engine room of a towering locomotive, two antiquated robots will risk everything for freedom and for each other.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BN2ZjNDgyMjMtMzJlNC11MmE4LWFkNGMtZDBiOWFiOTJjYTM2XkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_UY268_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BZmFmOGUwODMtZTIwOS00NGE4LTljNTQtNDkwYTI4NTIyZDA3XkEyXkFqcGdeQXVyNjgwNDU3NTA@._V1_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=A4-G7YpSFb4",
         popularity: 0
       },
@@ -88,6 +98,7 @@ module.exports = {
         title: "Planet Unknown",
         sinopse: "No final do século 21, a humanidade estava enfrentando o esgotamento dos recursos globais. Space Rovers foram enviados para encontrar planetas habitáveis em potencial.",
         posterUrl: " https://m.media-amazon.com/images/M/MV5BNDc5ZDg1MzUtMzdhZC11NzE3LWJkYWUtMWQyZWFlYzJjOTQ4XkEyXkFqcGdeQXVyMzcxMzc2ODA@._V1_UY268_CR9,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BODQ3YmMwZDItOTQ3My00ZWExLThiYzEtMTczZTA2NWNhYzczXkEyXkFqcGdeQXVyMzcxMzc2ODA@._V1_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=B4JY_JeodKw",
         popularity: 0
       },
@@ -96,6 +107,7 @@ module.exports = {
         title: "FTL",
         sinopse: "A lone astronaut testing the first faster-than-light spacecraft travels farther than he imagined possible.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BODcwOTlhY2QtOTllYy11Mzc1LWIwNzAtMWE1YWNlNGQyN2EyXkEyXkFqcGdeQXVyMTA4MjU2MA@@._V1_UY268_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://images.squarespace-cdn.com/content/v1/586d42bbebbd1a367d557779/1488921426268-B4EKK9VXWD7F8VR1CN4J/ke17ZwdGBToddI8pDm48kMD85UhlX-xb_FAMyDfXUvZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI37IdidUet6c4HziTUPPhrCmSndEIJlU00xUzUxmbzJI/FTL+3.png",
         videoUrl: "https://www.youtube.com/watch?v=t8LD1iUYv81",
         popularity: 0
       },
@@ -104,6 +116,7 @@ module.exports = {
         title: "Wire Cutter",
         sinopse: "A chance encounter proves fateful for 2 robots mining on a desolate planet.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BNDlkMGM1YzUtMDE5MS11MDU1LWE2MmQtM2JhOWI1ZjJmYmNkXkEyXkFqcGdeQXVyMTE1NzEzNDU@._V1_UX182_CR1,1,182,268_AL_.jpg",
+        thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BNzlkZjMyODMtMWYxYy00MmY5LWFkOGQtYWJmZmZkZDljN2Y1XkEyXkFqcGdeQXVyMjI3MTE4MjU@._V1_.jpg",
         videoUrl: "https://www.youtube.com/watch?v=Z-d-qHH9IPo",
         popularity: 0
       }

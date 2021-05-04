@@ -8,8 +8,9 @@ class Movie extends Model {
                 id: { primaryKey: true, type: Sequelize.UUID, defaultValue: Sequelize.UUIDV4 },
                 title: Sequelize.STRING(150),
                 sinopse: Sequelize.STRING(500),
-                posterUrl: Sequelize.STRING(100),
-                videoUrl: Sequelize.STRING(100),
+                posterUrl: Sequelize.STRING(300),
+                thumbnailUrl: Sequelize.STRING(300),
+                videoUrl: Sequelize.STRING(200),
                 popularity: Sequelize.INTEGER
             },
             {
