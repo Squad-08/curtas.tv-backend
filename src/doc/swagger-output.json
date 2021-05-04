@@ -64,7 +64,7 @@
             "type": "string",
             "example": "Movie Title"
           },
-          "posterUrl": {
+          "thumbnailUrl": {
             "type": "string",
             "example": "https://m.media-amazon.com/images/M/MV.jpg"
           }

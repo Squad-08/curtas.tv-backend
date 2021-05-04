@@ -18,7 +18,7 @@ const doc = {
         PopularMovies: [{
             id: 'c9a1f40a-65bc-420a-abac-4e140396d526',
             title: 'Movie Title',
-            posterUrl: "https://m.media-amazon.com/images/M/MV.jpg"
+            thumbnailUrl: "https://m.media-amazon.com/images/M/MV.jpg"
         }],
         Error500: {
             status: 'error',
