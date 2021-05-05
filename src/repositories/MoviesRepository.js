@@ -20,9 +20,12 @@ class MoviesRepository {
             include: [{
                 model: Genre,
                 as: 'genres',
-                attributes: [],
+                attributes: ['name'],
                 where: {
                     name: genre
+                },
+                through: {
+                    attributes: []
                 }
             }]
         })

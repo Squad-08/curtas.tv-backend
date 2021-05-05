@@ -24,7 +24,12 @@ const doc = {
             status: 'error',
             statusCode: 500,
             message: 'ErrorMessage'
-        }
+        },
+        MoviesByGenre: [{
+            id: '',
+            title: 'Movie Title',
+            posterUrl: 'https://m.media-amazon.com/images/M/MV.jpg'
+        }]
     }
 }
 

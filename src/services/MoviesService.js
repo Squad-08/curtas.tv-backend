@@ -17,7 +17,7 @@ class MoviesService {
 
         limitOf = this.validateLimit(limitOf)
 
-        const founds = this.moviesRepository.findAllByGenre(genre, limitOf)
+        const founds = await this.moviesRepository.findAllByGenre(genre, limitOf)
             .catch(() => {
                 return new ErrorHandler(StatusCode.ServerErrorInternal, 'Error search by genre.')
             })
