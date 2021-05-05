@@ -48,6 +48,37 @@
           }
         }
       }
+    },
+    "/{genre}": {
+      "get": {
+        "tags": [
+          "movie"
+        ],
+        "description": "Endpoint para obter os curtas por gênero.",
+        "parameters": [
+          {
+            "name": "genre",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Gênero dos curtas desejado."
+          },
+          {
+            "name": "limitOf",
+            "description": "Limite para quantidade de curtas retornado.",
+            "type": "integer",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/MoviesByGenre"
+            },
+            "description": "Lista de curtas do gênero informado."
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -85,6 +116,26 @@
         "message": {
           "type": "string",
           "example": "ErrorMessage"
+        }
+      }
+    },
+    "MoviesByGenre": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": ""
+          },
+          "title": {
+            "type": "string",
+            "example": "Movie Title"
+          },
+          "posterUrl": {
+            "type": "string",
+            "example": "https://m.media-amazon.com/images/M/MV.jpg"
+          }
         }
       }
     }

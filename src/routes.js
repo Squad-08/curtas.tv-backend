@@ -30,4 +30,18 @@ routes.get('/destaques', async (request, response) => {
     return await moviesController.findAllMaxPopularity(request, response)
 })
 
+routes.get('/:genre', async (request, response) => {
+    // #swagger.tags = ['movie']
+    // #swagger.description = 'Endpoint para obter os curtas por gênero.'
+    // #swagger.parameters['genre'] = { description: 'Gênero dos curtas desejado.' }
+    // #swagger.parameters['limitOf'] = { description: 'Limite para quantidade de curtas retornado.', type: 'integer'}
+
+    /** #swagger.responses[200] = { 
+         schema: { $ref: "#/definitions/MoviesByGenre" },
+        description: 'Lista de curtas do gênero informado.' 
+     } 
+    */
+    return await moviesController.findByGenre(request, response)
+})
+
 export { routes }
