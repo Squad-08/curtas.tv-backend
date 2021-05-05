@@ -3,12 +3,30 @@ import { StatusCode } from 'status-code-enum'
 import MoviesRepository from '../repositories/MoviesRepository'
 import { ErrorHandler } from '../helpers/error'
 import capitalize from '../helpers/utils'
+import isUUIDv4 from '../helpers/utils'
 
 class MoviesService {
 
     constructor() {
         this.moviesRepository = new MoviesRepository()
         this.defaultLimit = 3
+    }
+
+    async findOne(id) {
+
+        this.validateId(id)
+
+        return await this.moviesRepository.findOne(id)
+            .then(movieFound => {
+                if (!movieFound) {
+                    return { message: 'No movies found with informed id.' }
+                }
+
+                return movieFound
+            })
+            .catch(() => {
+                return new ErrorHandler(StatusCode.ServerErrorInternal, 'Error search movie by id.')
+            })
     }
 
     async findByGenre(genre, limitOf) {
@@ -50,6 +68,15 @@ class MoviesService {
         }
 
         return capitalize(genre)
+    }
+
+    validateId = (id) => {
+
+        if (!id) {
+            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id not informed.')
+        } else if (!isUUIDv4(id)) {
+            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id must be uuid v4.')
+        }
     }
 }
 
