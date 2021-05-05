@@ -13,9 +13,10 @@ class MoviesRepository {
         })
     }
 
-    async findAllByGenre(genre) {
+    async findAllByGenre(genre, limit) {
         return await Movie.findAll({
             attributes: ['id', 'title', 'posterUrl'],
+            limit,
             include: [{
                 model: Genre,
                 as: 'genres',
