@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import asyncHandler from 'express-async-handler'
 
 const swaggerFile = require('./doc/swagger-output.json')
 const swaggerUi = require('swagger-ui-express')
@@ -11,7 +12,7 @@ const moviesController = new MoviesController()
 
 routes.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
-routes.get('/movies/destaques', async (request, response) => {
+routes.get('/movies/destaques', asyncHandler(async (request, response) => {
     // #swagger.tags = ['movie']
     // #swagger.description = 'Endpoint para obter os curtas em destaque.'
     // #swagger.parameters['limitOf'] = { description: 'Limite para quantidade de curtas retornado.', type: 'integer'}
@@ -28,9 +29,9 @@ routes.get('/movies/destaques', async (request, response) => {
      }
      */
     return await moviesController.findAllMaxPopularity(request, response)
-})
+}))
 
-routes.get('/movies/:genre', async (request, response) => {
+routes.get('/movies/:genre', asyncHandler(async (request, response) => {
     // #swagger.tags = ['movie']
     // #swagger.description = 'Endpoint para obter os curtas por gênero.'
     // #swagger.parameters['genre'] = { description: 'Gênero dos curtas desejado.' }
@@ -48,9 +49,9 @@ routes.get('/movies/:genre', async (request, response) => {
        }
     */
     return await moviesController.findByGenre(request, response)
-})
+}))
 
-routes.get('/movie/:id', async (request, response) => {
+routes.get('/movie/:id', asyncHandler(async (request, response) => {
     // #swagger.tags = ['movie']
     // #swagger.description = 'Endpoint para busca de curta por id, incrementando a popularidade do curta.'
     // #swagger.parameters['id'] = { description: 'Id do curta, do tipo uuid v4.', type: 'string' }
@@ -73,6 +74,6 @@ routes.get('/movie/:id', async (request, response) => {
        }
      */
     return await moviesController.findById(request, response)
-})
+}))
 
 export { routes }
