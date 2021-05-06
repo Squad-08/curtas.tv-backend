@@ -2,8 +2,7 @@ import { StatusCode } from 'status-code-enum'
 
 import MoviesRepository from '../repositories/MoviesRepository'
 import { ErrorHandler } from '../helpers/error'
-import capitalize from '../helpers/utils'
-import isUUIDv4 from '../helpers/utils'
+import utils from '../helpers/utils'
 
 class MoviesService {
 
@@ -14,13 +13,21 @@ class MoviesService {
 
     async findOne(id) {
 
-        this.validateId(id)
+        id = await this.validateId(id)
+
+        if (id instanceof ErrorHandler) {
+            return id
+        }
 
         return await this.moviesRepository.findOne(id)
-            .then(movieFound => {
+            .then(async movieFound => {
                 if (!movieFound) {
                     return { message: 'No movies found with informed id.' }
                 }
+
+                movieFound.popularity++
+
+                await this.moviesRepository.update(id, { popularity: movieFound.popularity })
 
                 return movieFound
             })
@@ -33,7 +40,11 @@ class MoviesService {
 
         genre = await this.validateGenre(genre)
 
-        limitOf = this.validateLimit(limitOf)
+        limitOf = await this.validateLimit(limitOf)
+
+        if (genre instanceof ErrorHandler) {
+            return genre
+        }
 
         const founds = await this.moviesRepository.findAllByGenre(genre, limitOf)
             .catch(() => {
@@ -45,7 +56,7 @@ class MoviesService {
 
     async findAllMaxPopularity(limitOf) {
 
-        limitOf = this.validateLimit(limitOf)
+        limitOf = await this.validateLimit(limitOf)
 
         return await this.moviesRepository.findAllMaxPopularity(limitOf)
             .catch(() => {
@@ -64,19 +75,21 @@ class MoviesService {
     validateGenre = (genre) => {
 
         if (!genre) {
-            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Genre not informed.')
+            return new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Genre not informed.')
         }
 
-        return capitalize(genre)
+        return utils.capitalized(genre)
     }
 
     validateId = (id) => {
 
         if (!id) {
-            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id not informed.')
-        } else if (!isUUIDv4(id)) {
-            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id must be uuid v4.')
+            return new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id not informed.')
+        } else if (!utils.isUUIDv4(id)) {
+            return new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id must be uuid v4.')
         }
+
+        return id
     }
 }
 

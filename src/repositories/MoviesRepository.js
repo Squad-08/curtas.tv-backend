@@ -7,6 +7,7 @@ class MoviesRepository {
 
     async findOne(id) {
         return await Movie.findOne({
+            attributes: ['id', 'title', 'sinopse', 'posterUrl', 'videoUrl', 'popularity'],
             where: {
                 id
             }
