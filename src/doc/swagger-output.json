@@ -19,7 +19,7 @@
   "consumes": [],
   "produces": [],
   "paths": {
-    "/destaques": {
+    "/movies/destaques": {
       "get": {
         "tags": [
           "movie"
@@ -41,6 +41,74 @@
             "description": "Lista de curtas em destaque encontrados."
           },
           "5xx": {
+            "schema": {
+              "$ref": "#/definitions/Error500"
+            },
+            "description": "Erro interno."
+          }
+        }
+      }
+    },
+    "/movies/{genre}": {
+      "get": {
+        "tags": [
+          "movie"
+        ],
+        "description": "Endpoint para obter os curtas por gênero.",
+        "parameters": [
+          {
+            "name": "genre",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Gênero dos curtas desejado."
+          },
+          {
+            "name": "limitOf",
+            "description": "Limite para quantidade de curtas retornado.",
+            "type": "integer",
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/MoviesByGenre"
+            },
+            "description": "Lista de curtas do gênero informado."
+          }
+        }
+      }
+    },
+    "/movie/{id}": {
+      "get": {
+        "tags": [
+          "movie"
+        ],
+        "description": "Endpoint para busca de curta por id, incrementando a popularidade do curta.",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "Id do curta, do tipo uuid v4."
+          }
+        ],
+        "responses": {
+          "200": {
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            },
+            "description": "Curta encontrado com o id informado."
+          },
+          "400": {
+            "schema": {
+              "$ref": "#/definitions/Error400"
+            },
+            "description": "Bad request."
+          },
+          "500": {
             "schema": {
               "$ref": "#/definitions/Error500"
             },
@@ -81,6 +149,72 @@
         "statusCode": {
           "type": "number",
           "example": 500
+        },
+        "message": {
+          "type": "string",
+          "example": "ErrorMessage"
+        }
+      }
+    },
+    "MoviesByGenre": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "example": ""
+          },
+          "title": {
+            "type": "string",
+            "example": "Movie Title"
+          },
+          "posterUrl": {
+            "type": "string",
+            "example": "https://m.media-amazon.com/images/M/MV.jpg"
+          }
+        }
+      }
+    },
+    "Movie": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "example": "c9a1f40a-65bc-420a-abac-4e140396d526"
+        },
+        "title": {
+          "type": "string",
+          "example": "Movie Title"
+        },
+        "sinopse": {
+          "type": "string",
+          "example": "Sinopse here."
+        },
+        "posterUrl": {
+          "type": "string",
+          "example": "https://m.media-amazon.com/images/M/MV.jpg"
+        },
+        "videoUrl": {
+          "type": "string",
+          "example": "https://www.youtube.com/watch?v=1"
+        },
+        "popularity": {
+          "type": "number",
+          "example": 0
+        }
+      }
+    },
+    "Error400": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "example": "error"
+        },
+        "statusCode": {
+          "type": "number",
+          "example": 400
         },
         "message": {
           "type": "string",

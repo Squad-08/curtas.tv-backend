@@ -7,21 +7,26 @@ class MoviesRepository {
 
     async findOne(id) {
         return await Movie.findOne({
+            attributes: ['id', 'title', 'sinopse', 'posterUrl', 'videoUrl', 'popularity'],
             where: {
                 id
             }
         })
     }
 
-    async findAllByGenre(genre) {
+    async findAllByGenre(genre, limit) {
         return await Movie.findAll({
             attributes: ['id', 'title', 'posterUrl'],
+            limit,
             include: [{
                 model: Genre,
                 as: 'genres',
-                attributes: [],
+                attributes: ['name'],
                 where: {
                     name: genre
+                },
+                through: {
+                    attributes: []
                 }
             }]
         })
