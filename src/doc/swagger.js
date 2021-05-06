@@ -29,7 +29,20 @@ const doc = {
             id: '',
             title: 'Movie Title',
             posterUrl: 'https://m.media-amazon.com/images/M/MV.jpg'
-        }]
+        }],
+        Movie: {
+            id: 'c9a1f40a-65bc-420a-abac-4e140396d526',
+            title: 'Movie Title',
+            sinopse: 'Sinopse here.',
+            posterUrl: "https://m.media-amazon.com/images/M/MV.jpg",
+            videoUrl: 'https://www.youtube.com/watch?v=1',
+            popularity: 0
+        },
+        Error400: {
+            status: 'error',
+            statusCode: 400,
+            message: 'ErrorMessage'
+        }
     }
 }
 
