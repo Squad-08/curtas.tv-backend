@@ -12,6 +12,7 @@ As seguintes ferramentas foram usadas na construção desta API:
 3. Express
 4. Sequelize
 5. Swagger
+6. Sucrase
 
 <hr>
 
@@ -35,7 +36,7 @@ $ cd curtas.tv-backend
 $ npm install
 
 # Executar o servidor
-$ npm run dev
+$ npm start
 
 # O servidor iniciara na porta 3333
 ```
