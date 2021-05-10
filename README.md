@@ -12,12 +12,14 @@ As seguintes ferramentas foram usadas na construção desta API:
 3. Express
 4. Sequelize
 5. Swagger
+6. Sucrase
 
 <hr>
 
 ## 📃 Documentação
 A documentação foi feita utilizando o [swagger](https://swagger.io/).
 Com o projeto rodando local, basta acessar: http://localhost:3333/doc
+Caso queira testar a API em produção disponibilizamos uma [collection do postman](https://raw.githubusercontent.com/Squad-08/curtas.tv/main/assets/postman-collection/Curtas.Tv-API.postman_collection.json), basta ter o [Postman](https://www.postman.com/) instalado e fazer a importação.
 
 <hr>
 
@@ -35,7 +37,7 @@ $ cd curtas.tv-backend
 $ npm install
 
 # Executar o servidor
-$ npm run dev
+$ npm start
 
 # O servidor iniciara na porta 3333
 ```

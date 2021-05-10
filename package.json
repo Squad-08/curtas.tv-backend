@@ -2,8 +2,9 @@
   "name": "curtas.tv-backend",
   "version": "0.1.0",
   "description": "API Rest curtas.tv",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node -r sucrase/register src/server.js",
     "dev": "nodemon src/server.js",
     "swagger-autogen": "node src/doc/swagger.js"
   },
@@ -18,19 +19,24 @@
   },
   "homepage": "https://github.com/Squad-08/curtas.tv-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "pg": "^8.6.0",
     "pg-hstore": "^2.3.3",
     "reflect-metadata": "^0.1.13",
     "sequelize": "^6.6.2",
     "status-code-enum": "^1.0.0",
+    "swagger-autogen": "^2.6.3",
     "swagger-ui-express": "^4.1.4",
-    "swagger-autogen": "^2.6.3"
+    "sucrase": "^3.18.1"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
     "nodemon": "^2.0.7",
-    "sequelize-cli": "^6.2.0",
-    "sucrase": "^3.18.1"
+    "sequelize-cli": "^6.2.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }

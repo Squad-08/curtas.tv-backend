@@ -13,11 +13,7 @@ class MoviesService {
 
     async findOne(id) {
 
-        id = await this.validateId(id)
-
-        if (id instanceof ErrorHandler) {
-            return id
-        }
+        this.validateId(id)
 
         return await this.moviesRepository.findOne(id)
             .then(async movieFound => {
@@ -38,13 +34,9 @@ class MoviesService {
 
     async findByGenre(genre, limitOf) {
 
-        genre = await this.validateGenre(genre)
+        genre = this.validateGenre(genre)
 
-        limitOf = await this.validateLimit(limitOf)
-
-        if (genre instanceof ErrorHandler) {
-            return genre
-        }
+        limitOf = this.validateLimit(limitOf)
 
         const founds = await this.moviesRepository.findAllByGenre(genre, limitOf)
             .catch(() => {
@@ -56,7 +48,7 @@ class MoviesService {
 
     async findAllMaxPopularity(limitOf) {
 
-        limitOf = await this.validateLimit(limitOf)
+        limitOf = this.validateLimit(limitOf)
 
         return await this.moviesRepository.findAllMaxPopularity(limitOf)
             .catch(() => {
@@ -75,7 +67,7 @@ class MoviesService {
     validateGenre = (genre) => {
 
         if (!genre) {
-            return new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Genre not informed.')
+            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Genre not informed.')
         }
 
         return utils.capitalized(genre)
@@ -84,12 +76,10 @@ class MoviesService {
     validateId = (id) => {
 
         if (!id) {
-            return new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id not informed.')
+            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id not informed.')
         } else if (!utils.isUUIDv4(id)) {
-            return new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id must be uuid v4.')
+            throw new ErrorHandler(StatusCode.ClientErrorBadRequest, 'Id must be uuid v4.')
         }
-
-        return id
     }
 }
 

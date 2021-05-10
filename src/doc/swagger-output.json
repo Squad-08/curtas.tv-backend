@@ -5,7 +5,7 @@
     "title": "Curtas.Tv-API",
     "description": "API do Curtas.TV"
   },
-  "host": "localhost:3333",
+  "host": "api-curtas-tv.herokuapp.com",
   "basePath": "/",
   "tags": [
     {
@@ -76,6 +76,12 @@
               "$ref": "#/definitions/MoviesByGenre"
             },
             "description": "Lista de curtas do gênero informado."
+          },
+          "400": {
+            "schema": {
+              "$ref": "#/definitions/Error400"
+            },
+            "description": "Bad request."
           }
         }
       }
