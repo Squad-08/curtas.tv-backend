@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "c22a5dd2-d82f-493d-9dc5-44a5be5538cf",
+		"name": "Curtas.Tv-API",
+		"description": "Esta collection contém exemplos de requisição para os endpoint da api, com url local e url de produção.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Busca curtas em destaque.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{productionURL}}/movies/destaques",
+					"host": [
+						"{{productionURL}}"
+					],
+					"path": [
+						"movies",
+						"destaques"
+					],
+					"query": [
+						{
+							"key": "limitOf",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Este endpoint faz a busca dos curtas em destaque, podendo receber um parâmetro \"limitOf\" para delimitar a quantidade de curtas, por padrão este limite é 3."
+			},
+			"response": []
+		},
+		{
+			"name": "Busca curtas por gênero.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{productionURL}}/movies/drama",
+					"host": [
+						"{{productionURL}}"
+					],
+					"path": [
+						"movies",
+						"drama"
+					],
+					"query": [
+						{
+							"key": "limitOf",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Este endpoint faz a busca dos curtas por gênero(atualmente, em nosso banco de dados temos curtas dos seguintes gêneros: drama, fantasia e ficção científica), podendo receber dois parâmetros sendo o \"genre\" obrigatório, pois, ele diz qual o gênero de curtas será retornado e o \"limitOf\" que é opcional e serve para delimitar a quantidade de curtas, por padrão este limite é 3."
+			},
+			"response": []
+		},
+		{
+			"name": "Busca curta por id.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{productionURL}}/movie/263fc922-b665-4bbf-9f26-0250d65c24ef",
+					"host": [
+						"{{productionURL}}"
+					],
+					"path": [
+						"movie",
+						"263fc922-b665-4bbf-9f26-0250d65c24ef"
+					]
+				},
+				"description": "Es"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "localURL",
+			"value": "http://localhost:3333"
+		},
+		{
+			"key": "productionURL",
+			"value": "https://api-curtas-tv.herokuapp.com"
+		}
+	]
+}
