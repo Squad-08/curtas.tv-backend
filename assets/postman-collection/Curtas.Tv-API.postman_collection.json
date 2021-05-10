@@ -54,7 +54,7 @@
 						}
 					]
 				},
-				"description": "Este endpoint faz a busca dos curtas por gênero(atualmente, em nosso banco de dados temos curtas dos seguintes gêneros: drama, fantasia e ficção científica), podendo receber dois parâmetros sendo o \"genre\" obrigatório, pois, ele diz qual o gênero de curtas será retornado e o \"limitOf\" que é opcional e serve para delimitar a quantidade de curtas, por padrão este limite é 3."
+				"description": "Este endpoint faz a busca dos curtas por gênero (atualmente, em nosso banco de dados temos curtas dos seguintes gêneros: drama, fantasia e ficção científica), sendo obrigatório informar o gênero no path, pois, este será usado na busca, podendo adicionar o parâmetro \"limitOf\" que é opcional e serve para delimitar a quantidade de curtas, por padrão este limite é 3."
 			},
 			"response": []
 		},
@@ -73,7 +73,7 @@
 						"263fc922-b665-4bbf-9f26-0250d65c24ef"
 					]
 				},
-				"description": "Es"
+				"description": "Este endpoint faz a busca de um curta a partir do id(uuidv4) informado no path. Alguns id's para teste: 83fd213a-fe1c-4995-85e2-898b74b04db7 f8d186a6-fe75-46a4-b479-80a458d2f959 c593e965-ba71-4b42-a367-181f5fbc6070"
 			},
 			"response": []
 		}
