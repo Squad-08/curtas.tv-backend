@@ -68,7 +68,7 @@ module.exports = {
       },
       {
         id: "7d8834e0-e6d5-41b2-a222-c3895d7e2764",
-        title: "Chateau de Sable (Sand Castle)",
+        title: "Chateau de Sable",
         sinopse: "In the middle of a desert, soldiers are protecting a marvelous pearl, but a huge creature is going to steal it.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BNzNiN2YyMTEtZTY5Yi00YjBkLTg5ZjQtYWU0NTI2NzIyMTYyXkEyXkFqcGdeQXVyOTU3ODk4MQ@@._V1_UY268_CR3,0,182,268_AL_.jpg",
         thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BZjdiYjAwMTAtODg4ZS00NmM1LWJjYjMtODAxODhkZThjYmZkXkEyXkFqcGdeQXVyNTk3NTY4NjI@._V1_FMjpg_UX1000_.jpg",
@@ -178,7 +178,7 @@ module.exports = {
         id: "83fd213a-fe1c-4995-85e2-898b74b04db7",
         title: "Orbit Ever After",
         sinopse: "A young man, who's lived his whole life orbiting Earth with his mom, dad and grandpa, falls in love with a girl on another spaceship. A message tells him to jump to her next time they pass.",
-        posterUrl: "https://directorsnotes.com/wp-content/uploads/2013/08/OrbitEverAfter_03.jpg",
+        posterUrl: "https://images.justwatch.com/poster/12044176/s592",
         thumbnailUrl: "https://kanopy.com/cdn-cgi/image/fit=cover,height=900,width=1600/https://static-assets.kanopy.com/video-images/a5439765-443b-4425-92a7-4662b6398576.jpg",
         videoUrl: "https://www.youtube.com/watch?v=DpFXMIxlgPo",
         popularity: 0
