@@ -54,7 +54,7 @@ module.exports = {
         sinopse: "A fable of a young boy coming of age in the most peculiar of circumstances. It's the first time his Papa and Grandpa are taking him to work. Will he be able to find his own way?",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BZThmZjNjOTctNjhjNy00OGE5LTlhODEtNTRkMWE3NzJjMjdmXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg",
         thumbnailUrl: "https://m.media-amazon.com/images/M/MV5BNmQ1MTczYWItMTM5OS00NGUwLWIwMDUtYmRlZGU3MzIzMjM0XkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_.jpg",
-        videoUrl: "https://www.youtube.com/watch?v=r-SG6sTTygw",
+        videoUrl: "https://www.youtube.com/watch?v=CCQ9v6XMC6c",
         popularity: 0
       },
       {
@@ -96,7 +96,7 @@ module.exports = {
       {
         id: "ac1b5583-2e6e-40ab-8a28-6a8348a4d0dc",
         title: "Crabe Phare",
-        sinopse: "Crabe Phare",
+        sinopse: "The legend. The myth. The monster. The tale that have been told for generations and generations of sealers as you have never seen before.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BOWRiMzk5NWEtZTBjYS00ZjhhLTg1ZWYtZTNiY2MxMmUxN2NkXkEyXkFqcGdeQXVyODA1MjQ0MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
         thumbnailUrl: "https://wiz-art.ua/festival/wp-content/uploads/2016/07/crabe-phare.png",
         videoUrl: "https://www.youtube.com/watch?v=Vo6HXsHgizc",
@@ -153,7 +153,7 @@ module.exports = {
         sinopse: "A lone astronaut testing the first faster-than-light spacecraft travels farther than he imagined possible.",
         posterUrl: "https://m.media-amazon.com/images/M/MV5BODcwOTlhY2QtOTllYy00Mzc1LWIwNzAtMWE0YWNlNGQyN2EyXkEyXkFqcGdeQXVyMTA4MjU2MA@@._V1_UY268_CR0,0,182,268_AL_.jpg",
         thumbnailUrl: "https://images.squarespace-cdn.com/content/v1/586d42bbebbd1a367d557779/1488921426268-B4EKK9VXWD7F8VR1CN4J/ke17ZwdGBToddI8pDm48kMD85UhlX-xb_FAMyDfXUvZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PI37IdidUet6c4HziTUPPhrCmSndEIJlU00xUzUxmbzJI/FTL+3.png",
-        videoUrl: "https://www.youtube.com/watch?v=t8LD1iUYv81",
+        videoUrl: "https://www.youtube.com/watch?v=t8LD0iUYv80",
         popularity: 0
       },
       {
