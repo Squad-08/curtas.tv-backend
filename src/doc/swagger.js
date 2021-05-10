@@ -6,7 +6,7 @@ const doc = {
         title: 'Curtas.Tv-API',
         description: 'API do Curtas.TV'
     },
-    host: `${process.env.SERVER_URL || 'localhost'}:${process.env.SERVER_PORT || 3333}`,
+    host: `${process.env.SERVER_URL || 'localhost'}:${process.env.PORT || 3333}`,
     schemes: ['http'],
     tags: [
         {
