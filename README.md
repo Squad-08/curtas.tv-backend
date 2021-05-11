@@ -17,8 +17,9 @@ As seguintes ferramentas foram usadas na construção desta API:
 <hr>
 
 ## 📃 Documentação
-A documentação foi feita utilizando o [swagger](https://swagger.io/).
-[link da documentação](http://api-curtas-tv.herokuapp.com/doc/)
+A documentação foi feita utilizando o [swagger](https://swagger.io/). <br/>
+[link da documentação](http://api-curtas-tv.herokuapp.com/doc/) <br/>
+[collection do postman](https://raw.githubusercontent.com/Squad-08/curtas.tv-backend/main/assets/postman-collection/Curtas.Tv-API.postman_collection.json)
 
 <hr>
 
