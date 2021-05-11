@@ -18,8 +18,7 @@ As seguintes ferramentas foram usadas na construção desta API:
 
 ## 📃 Documentação
 A documentação foi feita utilizando o [swagger](https://swagger.io/).
-Com o projeto rodando local, basta acessar: http://localhost:3333/doc
-Caso queira testar a API em produção disponibilizamos uma [collection do postman](https://raw.githubusercontent.com/Squad-08/curtas.tv-backend/main/assets/postman-collection/Curtas.Tv-API.postman_collection.json), basta ter o [Postman](https://www.postman.com/) instalado e fazer a importação.
+[link da documentação](http://api-curtas-tv.herokuapp.com/doc/)
 
 <hr>
 
